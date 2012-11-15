@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unboxing the Web</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <!--<link rel="stylesheet" media="all" href="theme/css/custom.css">-->
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0" class="weavebg">
+
+<slides class="layout-widescreen">
+
+  <slide hidden class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/logonetlinks.png"></span>
+    </article>
+  </slide>
+
+  <slide hidden class="fill nobackground" data-body-class="nobackground">
+    <article>
+      <iframe width="640" height="390" data-src="http://www.youtube.com/embed/R0T13iiAzLM?autoplay=0&origin=http://localhost" frameborder="0"></iframe>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/logonetlinks.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Who <em>is</em> this Guy?</h2>
+    </hgroup>
+    <article id="who">
+      <span class="build"><p class="avatar rounded"></p></span>
+      <p data-config-presenter-title></p>
+      <p data-config-presenter-company></p>
+      <p style="margin-top:2em;">
+        <a rel="author" data-config-gplus>
+          <img src="images/fb_icon.png" width="44" height="44"></a> <a rel="author" data-config-gplus><span data-config-presenter-name></span></a>
+      </p>
+      <p>
+        <a rel="author" style="margin-left:-8px;" data-config-twitter>
+          <img src="images/twitter_newbird_blue.png" width="58" height="58"></a> <a rel="author" style="margin-left:-5px;" data-config-twitter></a>
+      </p>
+      <p>
+        <a rel="author" data-config-www></a>
+      </p>
+    </article>
+  </slide>
+
+  
+  <slide>
+    <hgroup>
+      <h2>HTML+CSS</h2>
+    </hgroup>
+	<article class="build" style="margin-top:-20px;">
+	<br/>
+		<div style="float:left;width:400px;"><h5 style="font-size:20px;">How it looks in your Editor</h5><img src="./images/screenshot.png" width="400px" /></div>		
+		<h1 style="margin:200px 40px;float:left;font-size:32px;">=></h1>
+		<div style="float:left;width:400px;"><h5 style="font-size:20px;">How it looks in your browser</h5><img src="./images/netlinkswebsite.png" width="400px" style="float:right"/></div>
+	</article>
+  </slide>
+  
+  
+  <slide>
+    <hgroup>
+      <h2>HTML</h2>
+    </hgroup>
+	<br/>
+	<article class="build" style="margin-top:-20px;">
+		<pre class="prettyprint" data-lang="html">
+		<br/>&lt;tagname attribut1="value" attribut2="value" > content &lt/tagname><br/> 
+		</pre>
+	</article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>HTML</h2>
+    </hgroup>
+	<br/>
+		<pre class="prettyprint" data-lang="html">
+		<br/>&lt;!DOCTYPE html><br/>&lt;html><br/> &lt;head><br/> &nbsp;...<br/> &lt;/head><br/> &lt;body><br/>  ...<br/> &lt;/body><br/>&lt;/html>	
+		</pre>
+	
+  </slide>
+
+    <slide>
+    <hgroup>
+      <h2>&lthead></h2>
+    </hgroup>
+	<br/>
+		<pre class="prettyprint" data-lang="html">
+		<br/>&lt;head><br/><br/> &lt;meta charset="utf-8" /><br/><br/> &lttitle>titre&lt/title><br/><br/> &lt;meta name="description" content="Netlinks is one of the leading technology<br/><br/> clubs in the national institute of applied sciences and technology (INSAT)."/><br/><br/>&lt;/head>	
+		</pre>
+	
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>&ltbody></h2>
+    </hgroup>
+	<br/>
+		<pre class="prettyprint" data-lang="html">
+		<br/>&lt;body><br/><br/> &lt;h1>Netlinks&lt/h1> &lt!-- h2,h3,h4,h5,h6--><br/><br/> &lt;p>In a world of continuous and fast-paced progress,&ltbr> our mission is not <br> limited to keeping up with the endless... &lt/p><br/><br/> &lt;img src="logonetlinks.png" width="200px" height="100%"><br/><br/> &lta href="http://www.netlinks-insat.com">Read more&lt/a><br/><br/>&lt;/body><br/>	
+		</pre>
+	
+  </slide>  
+
+  <slide>
+    <hgroup>
+      <h2>&ltbody></h2>
+    </hgroup>
+	<br/>
+		 <h1>Netlinks</h1> <!-- h2,h3,h4,h5,h6-->
+
+		 <p>In a world of continuous and fast-paced progress,<br> our mission is not 
+		 limited to keeping up with the endless... </p>
+
+		 <img src="./images/logonetlinks.png" width="200px" >
+
+		 <a href="http://www.netlinks-insat.com">Netlinks website</a>
+	
+  </slide>  
+  
+  <slide>
+    <hgroup>
+      <h2>&ltbody></h2>
+    </hgroup>
+	<br/>
+	<article class="build">
+		<pre class="prettyprint" data-lang="html" style="width:500px;float:left;">
+		<br/>&lt;body><br/><br/> &lt;ul><br/> &nbsp;&ltli>HTML-CSS&lt/li><br/> &nbsp;&ltli>JS&lt/li><br/> &nbsp;&ltli>PHP&lt/li><br/> &lt/ul><br/><br/> &lt;ol><br/> &nbsp;&ltli>HTML-CSS&lt/li><br/> &nbsp;&ltli>JS&lt/li><br/> &nbsp;&ltli>PHP&lt/li><br/> &lt/ol><br/><br/>&lt;/body>
+		</pre>
+		<img src="./images/screenshot2.png" style="display:block;float:left;">
+	</article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>&ltbody></h2>
+    </hgroup>
+	<br/>
+	<article class="build">
+		<pre class="prettyprint" data-lang="html" style="width:500px;float:left;">
+		<br/>&lt;body><br/><br/> &lt;div><br/> &nbsp;...<br/> &lt/div><br/><br/> &ltspan>...&lt/span><br/><br/>&lt;/body>
+		</pre>
+	</article>
+  </slide>
+  
+  <!--
+  <slide>
+    <hgroup>
+      <h2>&ltbody></h2>
+    </hgroup>
+	<br/>
+	<article class="build">
+		<p>Inline elements & Block elements </p>
+	</article>
+  </slide>
+  -->
+  <slide>
+    <hgroup>
+      <h2>HTML Format Tags</h2>
+    </hgroup>
+	<br/>
+	<article class="build">
+		<p>&lt;strong> &lt;b> &lt/i> &ltem> &ltfont>...</p>
+		<p style="text-align:center;margin-top:20px;">
+			<img src="./images/mes.png" width="500px">
+		</p>
+	</article>
+  </slide>
+  
+  <slide class="can nobackground">
+    <article class="flexbox vcenter">
+      <hgroup>
+        <h2 class="white auto-fadein">HTML Basics</h2>
+        <span class="build"><h1 class="stamp">Done</h1></span>
+      </hgroup>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>CSS (Cascading Style Sheets)</h2>
+    </hgroup>
+	<br/>
+	<article class="build">
+		<pre class="prettyprint" data-lang="html" style="width:800px;float:left;">
+		<br/>&ltp style="property1:value;property2:value;" >...&lt/p> 
+		</pre>
+		<pre class="prettyprint" data-lang="html" style="width:800px;float:left;">
+		<br/>&lthead><br> ...<br> &ltstyle type="text/css"><br> &nbspSelector <br> &nbsp{<br> &nbsp property:value;<br> &nbsp ... <br> &nbsp}<br>&nbsp&lt/style><br> ...<br>&lt/head>
+		</pre>
+	</article>
+  </slide>
+  
+ 
+   <slide>
+    <hgroup>
+      <h2>CSS (Cascading Style Sheets)</h2>
+    </hgroup>
+	<br/>
+	<article class="build"> 
+		<pre class="prettyprint" data-lang="css" style="width:800px;float:left;">
+		<br/>Selector <br>{<br> property:value;<br> ...<br>}
+		</pre>
+		<pre class="prettyprint" data-lang="html" style="width:800px;float:left;">
+		<br/>&lthead><br> ...<br> &ltlink rel="stylesheet" type="text/css" href="theme.css"><br> ...<br>&lt/head>
+		</pre>
+	</article>
+  </slide>
+  
+   <slide>
+    <hgroup>
+      <h2>Selectors</h2>
+    </hgroup>
+	<br/>
+	<article class="build">
+		<pre class="prettyprint" data-lang="css" style="width:450px;float:left;">
+		<br/>* ,div ,div h1 ,div > h1 ,div+h1 <br>{<br> background-color:#ff0000; <br> /*#ff0000=red*/<br> ...<br>}
+		</pre>
+		<pre class="prettyprint" data-lang="html" style="width:520px;float:right;">
+		<br/>&ltdiv> <br> &lth1>Netlinks&lt/h1><br> &ltp> &lth1> Unbox the Web &lt/h1> ... &lt/p><br>&lt/div><br>&lth1> Unleash your Creativity &lt/h1><br> ...<br>
+		</pre>
+		<p style="clear:both;">
+		<style type="text/css">
+		div  h1 
+		{
+		background-color:#ff0000;
+		}
+		</style>
+		<div> 
+			<h1>Netlinks</h1>
+			<span> <h1> Unbox the Web </h1> ... </span>
+		</div>
+		<h1> Unleash your Creativity </h1>
+		</p>
+	</article>
+  </slide>
+  
+  
+  <slide>
+    <hgroup>
+    <h2>Selectors : Class & id</h2>
+    </hgroup>
+	<br/>
+	<article class="build"> 
+		<pre class="prettyprint" data-lang="html" style="width:800px;float:left;">
+		<br/>&lttagname class="name" >...&lt/tagname><br>
+		</pre>
+		<pre class="prettyprint" data-lang="html" style="width:800px;float:left;">
+		<br/>&lttagname id="name" >...&lt/tagname><br>
+		</pre>
+	</article>
+  </slide>
+  
+  
+	
+	<slide>
+		<hgroup>
+		  <h2>Selectors : Class & id</h2>
+		</hgroup>
+		<article class="build" style="margin-top:25px;"> 
+			<pre class="prettyprint" data-lang="css" style="width:450px;float:left;">
+			<br/>#container <br>{<br> background-color:#ff0000;<br>}<br>.title <br>{<br> background-color:#fff000;<br>}
+			</pre>
+			<pre class="prettyprint" data-lang="html" style="width:520px;float:right;">
+			<br/>&ltdiv id="container"> <br> &lth1 class="title">Netlinks&lt/h1><br> &ltp> &lth1> Unbox the Web &lt/h1> ... &lt/p><br>&lt/div><br>&lth1 class="title"> Unleash <br>your Creativity &lt/h1><br> ...
+			</pre>
+			<p style="clear:both;">
+				<style type="text/css">
+				#container 
+				{
+				 padding:5px;
+				 background-color:#ff0000;
+				}
+				.title 
+				{
+				 background-color:#fff000;
+				}
+				</style>
+				<div id="container"> 
+					<h1 class="title">Netlinks</h1>
+					<span> <h1> Unbox the Web </h1> ... </span>
+				</div>
+				<h1 class="title"> Unleash your Creativity </h1>
+			</p>
+		</article>
+	</slide>
+	
+	
+	<slide>
+		<hgroup>
+		  <h2>Selectors: :after & :before</h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:450px;float:left;">
+			<br/>h1:after /*:before*/<br>{<br>content:url("./images/<br>logonetlinksmin.png");<br>} 
+			</pre>
+			<pre class="prettyprint" data-lang="html" style="width:450px;float:right;">
+			<br/>&lth1>Netlinks&lt/h1>
+			</pre>
+			
+				<style type="text/css">
+				#h:after
+				{
+				content:url("./images/logonetlinksmin.png");
+				} 
+				</style>
+				<h1 id="h" style="clear:both">Netlinks</h1>
+			
+		</article>
+	 </slide>
+  
+	
+	<slide>
+		<hgroup>
+		  <h2>Selectors: :link , :visited , :active , :hover</h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:450px;float:left;">
+			<br/>a:active<br>{<br>color:#ff0000;<br>} 
+			</pre>
+			<br>
+			<style>
+
+			#p2
+			{
+				position:absolute;
+				top:0;
+				left:129px;
+				transition:left 0.2s ease-in;
+				-webkit-transition:left 0.2s ease-in;
+			}
+			#p1
+			{
+				transition:padding 0.2s ease-in;
+				-webkit-transition:padding 0.2s ease-in;
+				padding:0 0 0 10px;
+			}
+			#hovereffect
+			{
+				display: inline-block;
+				margin:0 auto;
+				position:relative;
+				clear:both;
+			}
+			#hovereffect:hover #p1
+			{
+				padding:0;
+			}
+			#hovereffect:hover #p2
+			{
+				left:139px;
+			}
+			</style>
+			<div id="block" style="clear:both;">
+			<div id="hovereffect" >
+				<img id="p1" src="./images/p1.png">
+				<img id="p2" src="./images/p2.png">
+			</div>
+		</div>
+		</article>
+	 </slide>
+	 
+	 
+	<slide>
+		<hgroup>
+		  <h2>Selectors: :first-child , :last-child , :nth-child </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:450px;float:left;">
+			<br/>ul li:nth-child(2)<br>{<br>color:#ff0000;<br>} 
+			</pre>
+			<pre class="prettyprint" data-lang="css" style="width:450px;float:right;">
+			<br/>&ltul><br> &ltli>HTML&lt/li><br> &ltli>CSS&lt/li><br> &ltli>JS&lt/li><br>&lt/ul>
+			</pre>
+			
+			
+				<style type="text/css">
+				#ul li:nth-child(2)
+				{
+					color:#ff0000;
+				} 
+				</style>
+				<ul id="ul" style="clear:both"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+		</article>
+	 </slide>
+	
+	
+	<slide>
+		<hgroup>
+		  <h2>Selectors: [attr=val] , [attr^=val] , [attr~=val] & [attr$=val] </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:300px;float:left;">
+			<br/>a[href^="http"]<br>{<br>color:#ff0000;<br>} 
+			</pre>
+			<pre class="prettyprint" data-lang="html" style="width:660px;float:right;">
+			<br/>&lta href="index.html">Home&lt/a><br>&lta href="http://www.facebook.com/netlinks.insat"><br>Our FB Page&lt/a><br>&lta href="http://www.netlinks-insat.com"><br>Our Website&lt/a>
+			</pre>
+			
+			<p style="clear:both;">
+				<style type="text/css">
+				.a[href^="http"]
+				{
+				color:#ff0000;
+				}
+				</style>
+				<a class="a" href="index.html">Home</a>
+				<a class="a" href="http://www.facebook.com/netlinks.insat">Our FB Page</a>
+				<a class="a" href="http://www.netlinks-insat.com">Our Website</a>
+			</p>
+		</article>
+	 </slide>
+	
+	<slide>
+		<hgroup>
+		  <h2>Properties : Background </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:850px;float:left;">
+			<br/>div<br>{<br> background-color:#ff0000;<br> background-image:url("./images/pattern.png");<br> background-repeat:repeat;<br> background-position:right top;<br>} 
+			</pre>
+			<pre class="prettyprint" data-lang="css" style="width:850px;clear:both;">
+			<br/>div<br>{<br> background:#ff0000 url("./images/pattern.png") repeat right top;<br>} 
+			</pre>
+			
+		</article>
+	 </slide>
+	
+	
+	<slide>
+		<hgroup>
+		  <h2>Properties : Text </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:850px;float:left;">
+			<br/>p<br>{<br> color:#ff0000;<br> text-align:center; /* right left justify */<br> text-decoration:underline; /* line-throught overline */<br> text-transform:uppercase; /* lowercase capitalize */<br> line-height:20px;<br>} 
+			</pre>
+		</article>
+	 </slide>
+	
+
+	
+	<slide>
+		<hgroup>
+		  <h2>Properties : Font </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>p<br>{<br> font-family:Helvetica, "Times New Roman", sans-serif; /* serif monospace */<br> font-style:italic; /* normal oblique */<br> font-weight:bold; /* 100 ... 900 */<br> font-variant:small-caps; /* normal */<br>} 
+			</pre>
+			<p>font:font-style font-variant font-weight font-size/line-height font-family</p>
+		</article>
+	 </slide>
+	
+	<slide>
+		<hgroup>
+		  <h2>Properties : lists </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>ul li<br>{<br> list-style-type: square; /* circle upper-roman ... */<br> list-style-position:inside; /* outside */<br> list-style-image:url("icon.png"); <br>} 
+			</pre>
+			<p>liste-style: list-style-type, list-style-position, list-style-image</p>
+		</article>
+	 </slide>
+	
+	<slide>
+		<hgroup>
+		  <h2>Box Model </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> margin: 10px 5px 10px 5px; /* 10px 5px */<br> padding:6px; <br> border:1px solid #000000;  <br>} 
+			</pre>
+			<div style="clear:both;">
+			<style type="text/css">
+				#d1
+				{
+					width:50px;
+					margin: 10px 5px 10px 5px;
+					padding:6px;
+					border:1px solid #000000;
+					background-color:#ff0000;
+				}
+				#d2
+				{
+					width:50px;
+					margin: 10px 5px 10px 5px;
+					padding:6px;
+					border:1px solid #000000;
+					background-color:#00ff00;
+				} 
+				#d3
+				{
+					width:50px;
+					margin: 10px 5px 10px 5px;
+					padding:6px;
+					border:1px solid #000000;
+					background-color:#0000ff;
+				} 				
+				</style>
+			<div id="d1">A</div><div id="d2">B</div><div id="d3">C</div>
+			</div>
+		</article>
+	 </slide>
+	
+	<slide>
+		<hgroup>
+		  <h2>Box Model </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> margin-top: 10px; /* auto % */<br> margin-right:5px;<br> margin-bottom:10px;<br> margin-left:5px;<br> border-width:1px;<br> border-style:solid; /* dotted groove ... */<br> border-color:#000000;  <br> width:40%;<br> height:50px;<br> max-width:500px;<br> min-width:200px;<br> } 
+			</pre>
+			
+			
+		</article>
+	</slide>
+	
+	<slide>
+		<hgroup>
+		  <h2>Float </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> float: left; /* right inherit */<br> <br> } <br>#box2<br>{<br> clear: both; /* right left  */ <br> }
+			</pre>
+			<div style="clear:both;">
+			<style type="text/css">
+				#d11
+				{
+					width:50px;
+					margin: 10px 5px 10px 5px;
+					padding:6px;
+					border:1px solid #000000;
+					background-color:#ff0000;
+					float:left;
+				}
+				#d22
+				{
+					width:50px;
+					margin: 10px 5px 10px 5px;
+					padding:6px;
+					border:1px solid #000000;
+					background-color:#00ff00;
+					float:left;
+				} 
+				#d33
+				{
+					width:50px;
+					margin: 10px 5px 10px 5px;
+					padding:6px;
+					border:1px solid #000000;
+					background-color:#0000ff;
+					clear:both;
+				} 				
+				</style>
+			<div id="d11">A</div><div id="d22">B</div><div id="d33">C</div>
+			</div>
+		</article>
+	</slide>
+	
+	<slide>
+		<hgroup>
+		  <h2>Display </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> display: none; /* visibility:hidden */<br> } 
+			</pre>
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>a<br>{<br> display: block; /* inline inline-block */<br> } 
+			</pre>
+			<div style="clear:both;">
+			<style type="text/css">
+				#a11
+				{
+					display:block;
+					width:100px;
+					height:50px;
+					margin: 10px 5px 10px 5px;
+					background-color:#ff0000;
+				}				
+				</style>
+			<a href="page.html" id="a11">Link1</a><a href="page.html" id="a11">Link2</a>
+			</div>
+		</article>
+	</slide>
+	
+	<slide>
+		<hgroup>
+		  <h2>Position </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> position: absolute; /* static relative fixed */<br> top:100px; <br> left:50px;<br> z-index:1;<br> overflow:hidden; /* visible scroll auto */ } 
+			</pre>
+			<div style="clear:both;">
+			<style type="text/css">
+				
+				#div111
+				{
+					position:relative;
+					width:500px;
+					height:200px;
+					background-color:#eeeeee;
+				}
+				#div112
+				{
+					position:absolute;
+					width:150px;
+					height:100px;
+					background-color:#ff0000;
+				}
+				#div113
+				{
+					width:150px;
+					height:150px;
+					background-color:#00ff00;
+				}				
+				</style>
+			<div id="div111"><div id="div112"></div><div id="div113"> static </div></div>
+			</div>
+		</article>
+	</slide>
+	
+
+	<slide class="can nobackground">
+    <article class="flexbox vcenter">
+      <hgroup>
+        <h2 class="white auto-fadein">CSS 2</h2>
+        <span class="build"><h1 class="stamp">Done</h1></span>
+      </hgroup>
+    </article>
+    </slide>
+  
+  	<slide>
+		<hgroup>
+		  <h2>CSS3 : border-radius </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> border-radius:20px; /* border-top-right-radius:20px; ... */<br> -webkit-border-radius:20px;<br> -moz-border-radius:20px;<br> } 
+			</pre>
+			
+			<div style="clear:both;">
+			<style type="text/css">
+				#d111
+				{
+					width:100px;
+					height:50px;
+					border-radius:25px;
+					background-color:#ff0000;
+				}				
+				#p1
+				{
+					text-align: center;
+
+				}
+				</style>
+			<div id="d111"> <p id="p1">box1</p></div>
+			</div>
+		</article>
+	</slide>
+<slide>
+		<hgroup>
+		  <h2>box-shadow </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> box-shadow:2px 2px 3px 2px rgba(125,125,125,0.7) inset; /* outset */<br> -webkit-box-shadow:2px 2px 3px 2px rgba(125,125,125,0.7) inset;<br> -moz-box-shadow:2px 2px 3px 2px rgba(125,125,125,0.7) inset;<br> } 
+			</pre>
+			
+			<div style="clear:both;">
+			<style type="text/css">
+				#d1111
+				{
+					display:block;
+					width:100px;
+					height:50px;
+					margin: 10px 5px 10px 5px;
+					box-shadow:2px 2px 3px 2px rgba(20,20,20,0.5) inset;
+					background-color:#ff0000;
+					text-align:center;
+				}				
+				</style>
+			<div id="d1111">box</div>
+			</div>
+		</article>
+	</slide>
+
+	<slide>
+		<hgroup>
+		  <h2>text-shadow </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> text-shadow: 3px 5px 2px #FF0000; <br> } 
+			</pre>
+			
+			<div style="clear:both;">
+			<style type="text/css">
+				#p222
+				{
+					font-size: 45px;
+					font-weight: bold;
+					text-shadow: 3px 5px 2px #FF0000;	
+				}				
+				</style>
+			<p id="p222">Netlinks</p>
+			</div>
+		</article>
+	</slide>
+ 
+	<slide>
+		<hgroup>
+		  <h2>Gradient </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> background:linear-gradient(top left,red,blue); <br> background:-webkit-linear-gradient(top left,red,blue);<br> background:-moz-linear-gradient(top left,red,blue); /* -o- -ms- */<br> } 
+			</pre>
+			
+			<div style="clear:both;">
+			<style type="text/css">
+				#d333
+				{
+					width:300px;
+					height:250px;
+					background:-webkit-linear-gradient(top left,red,blue);
+				}				
+				</style>
+			<div id="d333"> </div>
+			</div>
+		</article>
+	</slide>
+
+	<slide>
+		<hgroup>
+		  <h2>Gradient : Radial </h2>
+		</hgroup>
+		<br/>
+		<article class="build">
+			<pre class="prettyprint" data-lang="css" style="width:990px;float:left;">
+			<br/>#box<br>{<br> background:radial-gradient(top left,circle,red,blue); <br> background:-webkit-radial-gradient(top left,circle,red,blue);<br> background:-moz-radial-gradient(top left,circle,red,blue); /* -o- -ms- */<br> } 
+			</pre>
+			
+			<div style="clear:both;">
+			<style type="text/css">
+				#d333
+				{
+					width:300px;
+					height:250px;
+					background:-webkit-radial-gradient(top left,circle,red,blue);
+				}				
+				</style>
+			<div id="d333"> </div>
+			</div>
+		</article>
+	</slide>
+
+
+<!--
+  <slide class="nobackground">
+    <article class="flexbox vcenter" id="chrome-heart">
+      <div class="chrome-logo spin"></div>
+      <h1 title="BFFs"><div class="jitter"></div> <img src="images/HTML5_Badge_128.png" style="margin-bottom:-24px;height:85px;"></h1>
+      <p class="toppadding"><a href="https://plus.google.com/b/102860501900098846931/102860501900098846931">+Google Chrome Developers</a></p>
+    </article>
+  </slide>
+-->
+  <slide class="thank-you-slide segue nobackground">
+
+    <article class="flexbox vleft auto-fadein">
+      <h2>&lt; Thank You! &gt;</h2>
+      <p> <a href="https://github.com/ebidel/html5can" class="white" style="border:none"></a></p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class=" dark nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/logonetlinks.png"></span>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!--
+<script src="js/app.js"></script>
+-->
+<script src="js/angular-1.0.0.min.js" async></script>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-32630298-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
